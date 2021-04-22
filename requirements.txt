@@ -1,0 +1,2 @@
+# Additional requirements
+biopython==1.78
