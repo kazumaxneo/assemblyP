@@ -48,6 +48,25 @@ optional
     #make primers using preassembled sequences
     assemblyP -f paired_1.fq.gz -r paired_2.fq.gz -f contigs.fasta
 
+### help  
+    $ assemblyP -h
+
+    usage: python part1-change.py -f paired_1.fq.gz -r paired_2.fq.gz  
+    Script to design outward specific primers at the end of the contig sequences (v0.1)  
+
+    optional arguments:  
+      -h, --help          show this help message and exit  
+      -c <contigs.fasta>  contig fasta file  
+      -f <forward reads>  paired read 1  
+      -r <reverse reads>  paired read 2  
+      -o PATH             output directory name  
+      -k 16               K-mer size for rpeat masking.  
+      -g PATH             spades contig name  
+      -l PATH             glistmaker output file  
+      -m PATH             repeat masked file  
+      -n PATH             border sequences    
+  
+
 
 ### Docker
     
