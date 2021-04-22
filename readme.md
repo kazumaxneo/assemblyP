@@ -1,7 +1,9 @@
     
 ### Script to design outward specific primers at the end of the contig sequences.
-under development  
-  
+under development
+
+
+
 ### Requirements
 
 You must have the following installed on your system to use use this cript:  
@@ -19,7 +21,7 @@ optional
 
 ### Install dependency and assemblyP script.
     #Setup virtual enviroment using conda or mamba
-    #If you already have Anaconda or Minicona enviroment, you can install mamba with conda. 
+    #If you already have Anaconda or Minicona enviroment, you can install mamba with conda.   
     conda install -c conda-forge mamba -y
     
     #Then, create virtual enviroment
@@ -34,12 +36,19 @@ optional
     #Clone repository and install assemblyP package
     git clone git@github.com:kazumaxneo/assemblyP.git && cd assemblyP/
     pip install .
-    
-    #Without instalation
+  
+  
+### Without instalation
+    mamba create -n assemblyP -y python=3.9
+    conda activate assemblyP
+    mamba install -c bioconda primer3==2.5.0 bbmap genometester4 spades==3.15 -y
     pip install biopython
     git clone git@github.com:kazumaxneo/assemblyP.git
-    python assemblyP/assemblyP/__main__.py -f paired_1.fq.gz -r paired_2.fq.gz
       
+    #Then, run main.py
+    python assemblyP/assemblyP/__main__.py -f paired_1.fq.gz -r paired_2.fq.gz
+  
+  
 ### help  
     $ assemblyP -h
 
@@ -58,11 +67,20 @@ optional
       -m PATH             repeat masked file  
       -n PATH             border sequences    
   
+  
+
+### test run
+    cd test_data/
+    #perform de novo aassembly and make primers
+    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz
+    
+    #make primers using preassembled sequences
+    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz -f contigs.fasta
 
 
 ### Docker
     
-under development
+
 　
 　
 ### Licence
