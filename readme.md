@@ -21,9 +21,9 @@ optional
 
 ### Install assemblyP and doing test run
     #setup virtual enviroment using mamba
-    mamba create -n PrimerDesign -y python=3.9
+    mamba create -n assemblyP -y python=3.9
     #activate enviroment
-    conda activate PrimerDesign
+    conda activate assemblyP
     #install dependancy
     mamba install -c bioconda primer3==2.5.0
     mamba install -c bioconda bbmap
