@@ -21,6 +21,7 @@ optional
     #Setup virtual enviroment using conda or mamba
     #If you already have Anaconda or Minicona enviroment, you can install mamba with conda. 
     conda install -c conda-forge mamba -y
+    
     #Then, create virtual enviroment
     mamba create -n assemblyP -y python=3.9
       
