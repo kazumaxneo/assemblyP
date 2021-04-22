@@ -17,7 +17,7 @@ optional
 
 
 
-### Install assemblyP and doing test run
+### Install dependency and assemblyP script.
     #setup virtual enviroment using conda or mamba
     #If you already have Anaconda or Minicona enviroment, you can instqlal mamba this commnad. 
     conda install -c conda-forge mamba -y
