@@ -1,8 +1,6 @@
     
 ### Script to design outward specific primers at the end of the contig sequences.
-under development
-
-
+under development  
   
 ### Requirements
 
@@ -45,7 +43,7 @@ optional
 
 ### Docker
     
-
+under development
 　
 　
 ### Licence
