@@ -18,15 +18,18 @@ optional
 
 
 ### Install assemblyP and doing test run
-    #setup virtual enviroment using mamba
+    #setup virtual enviroment using conda or mamba
+    #If you already have Anaconda or Minicona enviroment, you can instqlal mamba this commnad. 
+    conda install -c conda-forge mamba -y
+    #Then, create virtual enviroment
     mamba create -n assemblyP -y python=3.9
     #activate enviroment
     conda activate assemblyP
     #install dependancy
-    mamba install -c bioconda primer3==2.5.0
-    mamba install -c bioconda bbmap
-    mamba install -c bioconda genometester4
-    mamba install -c bioconda spades==3.15
+    mamba install -c bioconda primer3==2.5.0 -y
+    mamba install -c bioconda bbmap -y
+    mamba install -c bioconda genometester4 -y
+    mamba install -c bioconda spades==3.15 -y
         
     #clone this repository and install this package
     git clone git@github.com:kazumaxneo/assemblyP.git && cd assemblyP/
