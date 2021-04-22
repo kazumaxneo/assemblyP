@@ -19,7 +19,7 @@ optional
 
 
 
-### Install primerdesigner and doing test run
+### Install assemblyP and doing test run
     #setup virtual enviroment using mamba
     mamba create -n PrimerDesign -y python=3.9
     #activate enviroment
