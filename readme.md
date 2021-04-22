@@ -35,6 +35,11 @@ optional
     git clone git@github.com:kazumaxneo/assemblyP.git && cd assemblyP/
     pip install .
     
+    #Without instalation
+    pip install biopython
+    git clone git@github.com:kazumaxneo/assemblyP.git
+    python assemblyP/assemblyP/__main__.py -h
+    
     #test run
     cd test_data/
     #perform de novo aassembly and make primers
