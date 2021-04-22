@@ -18,36 +18,27 @@ optional
 
 
 ### Install dependency and assemblyP script.
-    #setup virtual enviroment using conda or mamba
-    #If you already have Anaconda or Minicona enviroment, you can instqlal mamba this commnad. 
+    #Setup virtual enviroment using conda or mamba
+    #If you already have Anaconda or Minicona enviroment, you can install mamba with conda. 
     conda install -c conda-forge mamba -y
     #Then, create virtual enviroment
     mamba create -n assemblyP -y python=3.9
-    #activate enviroment
+      
+    #Activate enviroment
     conda activate assemblyP
-    #install dependancy
-    mamba install -c bioconda primer3==2.5.0 -y
-    mamba install -c bioconda bbmap -y
-    mamba install -c bioconda genometester4 -y
-    mamba install -c bioconda spades==3.15 -y
+      
+    #Install dependancy
+    mamba install -c bioconda primer3==2.5.0 bbmap genometester4 spades==3.15 -y
         
-    #clone this repository and install this package
+    #Clone repository and install assemblyP package
     git clone git@github.com:kazumaxneo/assemblyP.git && cd assemblyP/
     pip install .
     
     #Without instalation
     pip install biopython
     git clone git@github.com:kazumaxneo/assemblyP.git
-    python assemblyP/assemblyP/__main__.py -h
-    
-    #test run
-    cd test_data/
-    #perform de novo aassembly and make primers
-    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz
-    
-    #make primers using preassembled sequences
-    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz -f contigs.fasta
-
+    python assemblyP/assemblyP/__main__.py -f paired_1.fq.gz -r paired_2.fq.gz
+      
 ### help  
     $ assemblyP -h
 
