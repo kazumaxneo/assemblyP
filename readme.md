@@ -7,7 +7,7 @@ under development
 ### Requirements
 
 You must have the following installed on your system to use use this cript:  
-* ubuntu  
+* linux os  
 * python3(>3.6)  
 * primer3 (<https://github.com/primer3-org/primer3>)  
 * primer3 masker (<https://github.com/bioinfo-ut/primer3_masker>)  
