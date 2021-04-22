@@ -3,7 +3,7 @@
 under development
 
 
-
+  
 ### Requirements
 
 You must have the following installed on your system to use use this cript:  
@@ -37,20 +37,15 @@ optional
     #test run
     cd test_data/
     #perform de novo aassembly and make primers
-    primerdesigner -f paired_1.fq.gz -r paired_2.fq.gz
+    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz
     
     #make primers using preassembled sequences
-    primerdesigner -f paired_1.fq.gz -r paired_2.fq.gz -f contigs.fasta
+    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz -f contigs.fasta
 
 
 ### Docker
     
-    git clone git@github.com:kazumaxneo/genome_quest.git
-    cd genome_quest
-    docker build . -t genome_quest_docker
-    docker run -itv $PWD:/data/ genome_quest_docker
-    . ~/.profile
-    genome_quest
+
 　
 　
 ### Licence
