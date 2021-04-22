@@ -29,7 +29,7 @@ optional
     mamba install -c bioconda spades==3.15
         
     #clone this repository and install this package
-    git clone git@github.com:kazumaxneo/asssemblyP.git && cd asssemblyP/
+    git clone git@github.com:kazumaxneo/assemblyP.git && cd assemblyP/
     pip install .
     
     #test run
