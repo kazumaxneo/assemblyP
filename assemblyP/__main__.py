@@ -35,7 +35,10 @@ maskseq = args.m
 borders = args.n
 
 #usage
-print("\nusage: python part1-change.py -f paired_1.fq.gz -r paired_2.fq.gz\n")
+print("\nDe novo mode:")
+print("usage: python part1-change.py -f paired_1.fq.gz -r paired_2.fq.gz\n")
+print("Primer mode:")
+print("usage: python part1-change.py -f paired_1.fq.gz -r paired_2.fq.gz -c contigs.fasta\n")
 
 #error message
 if fq1 == "":
