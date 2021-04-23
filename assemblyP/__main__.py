@@ -9,8 +9,6 @@ import statistics
 import os
 import argparse
 
-#usage
-print("\nusage: python part1-change.py -f paired_1.fq.gz -r paired_2.fq.gz\n")
 
 parser = argparse.ArgumentParser(description='Script to design outward specific primers at the end of the contig sequences (v0.1)')
 ##parser.add_argument("reference", metavar="<reference.fasta>", type=str, help="reference fasta file (gzipped allowed)")
@@ -35,6 +33,9 @@ contig = args.g
 glistmakerlist = args.l
 maskseq = args.m
 borders = args.n
+
+#usage
+print("\nusage: python part1-change.py -f paired_1.fq.gz -r paired_2.fq.gz\n")
 
 #error message
 if fq1 == "":
