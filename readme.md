@@ -24,7 +24,7 @@ optional
   
   
 ### Without installing assemblyP (recommnended)
-    mamba create -n assemblyP -y python=3.9
+    mamba create -n assemblyP -y python=3
     conda activate assemblyP
     mamba install -c bioconda primer3==2.5.0 bbmap genometester4 spades==3.15 -y
     pip install biopython
