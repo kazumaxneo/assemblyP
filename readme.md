@@ -1,8 +1,10 @@
     
 ### Script to design outward specific primers at the end of the contig sequences.
-under development
+  
+Under development  
 
-
+　
+　
 
 ### Requirements
 
@@ -17,9 +19,20 @@ You must have the following installed on your system to use use this cript:
 * biopython (<https://github.com/biopython/biopython>)  
 optional  
 
+  
+  
+### Without installing assemblyP (recommnended)
+    mamba create -n assemblyP -y python=3.9
+    conda activate assemblyP
+    mamba install -c bioconda primer3==2.5.0 bbmap genometester4 spades==3.15 -y
+    pip install biopython
+    git clone git@github.com:kazumaxneo/assemblyP.git
+      
+    #Then, run assemblyP.py
+    python assemblyP/assemblyP.py -f paired_1.fq.gz -r paired_2.fq.gz
 
 
-### Install dependency and assemblyP script.
+### Install dependency and assemblyP script (developing)
     #Setup virtual enviroment using conda or mamba
     #If you already have Anaconda or Minicona enviroment, you can install mamba with conda.   
     conda install -c conda-forge mamba -y
@@ -36,17 +49,6 @@ optional
     #Clone repository and install assemblyP package
     git clone https://github.com/kazumaxneo/assemblyP.git && cd assemblyP/
     pip install .
-  
-  
-### Without instalation
-    mamba create -n assemblyP -y python=3.9
-    conda activate assemblyP
-    mamba install -c bioconda primer3==2.5.0 bbmap genometester4 spades==3.15 -y
-    pip install biopython
-    git clone git@github.com:kazumaxneo/assemblyP.git
-      
-    #Then, run assemblyP.py
-    python assemblyP/assemblyP.py -f paired_1.fq.gz -r paired_2.fq.gz
   
   
 ### help  
@@ -79,7 +81,7 @@ optional
 
 
 ### Docker
-    
+Under development 
 
 　
 　
