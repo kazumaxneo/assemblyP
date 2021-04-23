@@ -43,10 +43,10 @@ optional
     conda activate assemblyP
     mamba install -c bioconda primer3==2.5.0 bbmap genometester4 spades==3.15 -y
     pip install biopython
-    git clone https://github.com/kazumaxneo/assemblyP.git
+    git clone git@github.com:kazumaxneo/assemblyP.git
       
-    #Then, run main.py
-    python assemblyP/assemblyP/__main__.py -f paired_1.fq.gz -r paired_2.fq.gz
+    #Then, run assemblyP.py
+    python assemblyP/assemblyP.py -f paired_1.fq.gz -r paired_2.fq.gz
   
   
 ### help  
