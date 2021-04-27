@@ -1,4 +1,4 @@
-<p align="center"><img src="images/logo2.png" alt="Minipolish" width="700"></p>
+<p align="center"><img src="images/logo3.png" alt="Minipolish" width="700"></p>
 
     
 ### Script to design outward specific primers at the end of the contig sequences.
