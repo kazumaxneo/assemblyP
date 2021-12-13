@@ -79,7 +79,7 @@ optional
     assemblyP -f paired_1.fq.gz -r paired_2.fq.gz
     
     #make primers using preassembled sequences
-    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz -f contigs.fasta
+    assemblyP -f paired_1.fq.gz -r paired_2.fq.gz - contigs.fasta
 
 
 ### Docker
